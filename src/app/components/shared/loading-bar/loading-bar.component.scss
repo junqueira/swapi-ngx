@@ -1,0 +1,87 @@
+/* linear loading */
+
+.bar-pai {
+    height: 5px;
+    margin-bottom: 5px;
+}
+
+.bar-container {
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background-color: #bdbdbd;
+}
+
+.bar {
+    content: "";
+    display: inline;
+    position: absolute;
+    height: 100%;
+    width: 0;
+    right: 0;
+}
+
+.bar:nth-child(1) {
+    background-color: #000000;
+    animation: linear_loader 3s linear 1s infinite;
+}
+
+.bar:nth-child(2) {
+    background-color: #000000;
+    animation: linear_loader 3s linear 2s infinite;
+}
+
+.bar:nth-child(3) {
+    background-color: #000000;
+    animation: linear_loader 3s linear 3s infinite;
+}
+
+@keyframes linear_loader {
+    0% {
+        right: 100%;
+        width: 10%;
+    }
+    30% {
+        right: 0%;
+        width: 40%;
+    }
+    50% {
+        right: 0%;
+        width: 0%;
+    }
+    80% {
+        right: 0%;
+        width: 0%;
+    }
+    100% {
+        right: 0%;
+        width: 0%;
+    }
+}
+
+
+/* end linear loading */
+
+
+/* Progress Bar */
+
+.progress {
+    position: relative;
+    height: 4px;
+    display: block;
+    width: 100%;
+    background-color: #A7BFD3;
+    border-radius: 2px;
+    background-clip: padding-box;
+    margin: 0 0 1rem 0;
+    overflow: hidden;
+}
+
+.progress .determinate {
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    bottom: 0;
+    background-color: #000000;
+    transition: width .3s linear;
+}

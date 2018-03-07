@@ -1,0 +1,792 @@
+/* coin colors */
+.color-AEON    {color:#b38f00;background-color:#b38f00;}
+.color-NMC     {color:#ffcd00;background-color:#ffcd00;}
+.color-AUR     {color:#ffdb4d;background-color:#ffdb4d;}
+.color-BLK     {color:#ffeb99;background-color:#ffeb99;}
+.color-MSC     {color:#ae3773;background-color:#ae3773;}
+.color-DASH    {color:#ce6499;background-color:#ce6499;}
+.color-DOGE    {color:#e09ebf;background-color:#e09ebf;}
+.color-XDN     {color:#f3d8e6;background-color:#f3d8e6;}
+.color-BRL     {color:#006e99;background-color:#006e99;}
+.color-ETH     {color:#009ddb;background-color:#009ddb;}
+.color-MZC     {color:#1abeff;background-color:#1abeff;}
+.color-XMR     {color:#66d4ff;background-color:#66d4ff;}
+.color-BTC     {color:#e67e00;background-color:#e67e00;}
+.color-LTC     {color:#ff9a1f;background-color:#ff9a1f;}
+.color-NXT     {color:#ffba66;background-color:#ffba66;}
+.color-PPC     {color:#ffddb3;background-color:#ffddb3;}
+.color-EMC     {color:#7e1c97;background-color:#7e1c97;}
+.color-FTC     {color:#ce2696;background-color:#ce2696;}
+.color-POT     {color:#7853df;background-color:#7853df;}
+.color-ECS     {color:#9993eb;background-color:#9993eb;}
+.color-COINYE  {color:#ff3300;background-color:#ff3300;}
+.color-default {color:#000000;background-color:#000000;}
+
+/* You can add global styles to this file, and also import other style files */
+body {
+    box-sizing: border-box;
+    background-color: #e4e4e4 !important;
+    font-size: 16px; /* base font size = 1em */
+    overflow-x: hidden;
+}
+.marg-top-15px {
+    margin-top: 15px !important;
+}
+
+/* Width e height Full */
+.hfull { height: 100%; }
+.wfull { width: 100%; }
+/* Width e height Full */
+
+/* Padding ------------------------------------------------------------*/
+.pad-5 {  padding: 5px; }
+.pad-7 {  padding: 7px; }
+.pad-10 { padding: 10px; }
+.pad-15 { padding: 15px; }
+
+.no-pad-l-r { padding-left: 0rem !important; padding-right: 0rem !important; }
+
+/* Right */
+.padR-10 { padding-right: 10px !important}
+.padR-30 { padding-right: 30px !important}
+.padR-50 { padding-right: 50px !important}
+/* Left */
+.padL-10 { padding-left: 10px !important}
+@media (max-width: 767px) {
+    .padL-25 { padding-left: 25px !important}
+}
+.padL-30 { padding-left: 30px !important}
+.padL-50 { padding-left: 50px !important}
+/* Top */
+.padT-5 { padding-top: 5px !important}
+.padT-10 { padding-top: 10px !important}
+
+/* bottom */
+.pad-bottom-10 { padding-bottom: 10px !important}
+.pad-bottom-50rem { padding-bottom: .50rem !important}
+/* Left / Rigth */
+.padLR-5 { padding: 0 5px !important}
+.padLR-30 { padding: 0 30px !important}
+.padLR-50 { padding: 0 50px !important}
+/* Top / Bottom */
+.padTB-30 { padding: 11px 0 !important}
+/* Padding ------------------------------------------------------------*/
+
+
+/* Width Fixo ------------------------------------------------------------*/
+.wd-7px { width: 7px; }
+/* Width Fixo ------------------------------------------------------------*/
+.wd-50percent { width: 50%; }
+
+.width-10 {
+    width: 10%;
+}
+.width-25 {
+    width: 25%;
+}
+.width-50 {
+    width: 50%;
+}
+/* Width Fixo ------------------------------------------------------------*/
+
+/* Line heigth ------------------------------------------------------------*/
+.no-line-height { line-height: 0; }
+.ln-height-06 { line-height: 0.6; }
+.ln-height-1 { line-height: 1; }
+.ln-height-7rem { line-height: .7rem }
+/* Line heigth ------------------------------------------------------------*/
+
+
+/* Margins ------------------------------------------------------------*/
+/* NO MARGIN */
+.no-marg {
+    margin: 0rem;
+}
+/* MARGEM FULL */
+.marg-60 {
+    margin: 60px;
+}
+/* MARGEM TOP */
+.margT-5 {
+    margin-top: 5px;
+}
+/* MARGEM TOP BOT */
+.margTB-5{
+    margin: 5px 0 5px 0;
+}
+.margTB-8 {
+    margin: 8px 0 8px 0;
+}
+.margTB-10 {
+    margin: 10px 0 10px 0;
+}
+.margTB-20 {
+    margin: 20px 0 20px 0;
+}
+.margTB-30 {
+    margin: 30px 0 30px 0;
+}
+.margTB-40 {
+    margin: 40px 0 40px 0;
+}
+.margTB-50 {
+    margin: 50px 0 50px 0; 
+}
+/* TOP */
+.margT-7rem { 
+    margin-top: .7rem;
+}
+.margT-5 {
+    margin-top: 5px;
+}
+.margT-10 {
+    margin-top: 10px;
+}
+.margT-16 {
+    margin-top: 16px;
+}
+.margT-30 {
+    margin-top: 30px;
+}
+.margT-80 {
+    margin-top: 80px;
+}
+/* LEFT RIGHT */
+.margLR-2 {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.margLR-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.margLR-20 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.margLR-30 {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.margLR-70 {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+/* AUTO */
+.margL-auto{
+    margin-left: auto;
+}
+.margLR-auto{
+    margin: 0 auto !important;
+}
+/* Margins ------------------------------------------------------------*/
+
+/* ICONS Tamanhos */
+.material-icons.font-45{
+    font-size: 45px;
+}
+/* ICONS Tamanhos */
+
+/* headers */
+
+h2 { font-size: 1.125rem !important; }
+
+
+section h2,
+h2.titAzul,
+h5.titAzul {
+    color: #1c5790 !important;
+}
+/* Textos UPERCASE iniciais */
+.name {
+    text-transform: capitalize;
+}
+/* Textos UPERCASE iniciais */
+
+/* forms */
+
+a { text-decoration: none; transition: all ease-in-out 0.2s; font-family: Arial; font-size: 12px; color: #1c5790 !important; }
+a:hover { cursor: pointer !important; text-decoration: none;}
+a.pequeno { font-size: 9px !important; }
+
+/* Botoes */
+.btn-azul {
+    color: #fff;
+    background-color: #1c5790;
+    border-color: #1c5790;
+}
+.btn-azul:hover {
+    color: #fff;
+    background-color:#154477;
+    border-color:#154477;
+}
+.btn-azul.active {
+    color: #fff;
+    background-color: #13375a;
+    border-color: #13375a;
+}
+.btn-verde-agua {
+    color: #fff;
+    background-color: #33cc99;
+    border-color: #33cc99;
+}
+.btn-verde-agua:hover {
+    color: #fff;
+    background-color: #2cac81;
+    border-color: #2cac81;
+}
+.btn-verde {
+	background: #4da53c;
+	border: 0;
+}
+.btn-vermelho {
+	background: #ff6939;
+	border: 0;
+}
+.letras-verdes {
+    color: #4da53c !important;
+    font-weight: 500;
+}
+.letras-verdes-hover:hover {
+    color: #459435 !important;
+    font-weight: 500;
+}
+.letras-vermelhas {
+    color: #ff6939 !important;
+    font-weight: 500;
+}
+.letras-vermelhas-hover:hover {
+    color: #ff3300 !important;
+    font-weight: 500;
+}
+.btn-success {
+    color: #fff;
+    background-color: #33cc99;
+    border-color: #33cc99;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #28a57b;
+    border-color: #28a57b;
+}
+.btn.btn-lg {
+    height: 40px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px;
+    font-size: 18px;
+}
+
+/* helpers - layout */
+
+.s-text { font-size: 0.75rem; }
+.xs-text { font-size: 0.625rem; }
+
+.no-margin { margin: 0 !important; }
+.no-margL { margin-left: 0 !important; }
+.no-margR { margin-right: 0 !important; }
+.no-padding { padding: 0 !important; }
+.no-padL { padding-left: 0 !important; }
+.no-padR { padding-right: 0 !important; }
+
+
+/* geral */
+.default-bcAzul { background: #1c5790; color: #fff; }
+@media (max-width: 767px) {
+    .footer {
+        display: none;
+    }
+}
+.footer {
+    min-height: 40px;
+}
+.container {
+    max-width: 99.9% !important;
+    min-height: 500px;
+    padding: 0 !important;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+
+.box {
+    background: rgba(255, 255, 255, 1);
+    padding: 10px;
+    margin-bottom: 14px;
+    border-radius: .50rem;
+}
+.box.configuracoes-principal {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.boxAzul {
+    position: absolute;
+    width: calc(100% - 14px);
+    height: 33px;
+    background-color: #1c5790;
+    right: 7px;
+}
+.box-no-shadow {
+    background: rgba(255, 255, 255, 1);
+}
+.box-no-padding {
+    background: rgba(255, 255, 255, 1);
+    margin-bottom: 14px;
+    border-radius: .50rem;
+}
+.box-no-pad-no-back {
+    margin-bottom: 7px; 
+}
+.box a { color: #1c5790; }
+.box .btn:not(.btn-outline-success) { color: #fff !important; }
+
+.listItem > div > ul > li {
+    border: 1px solid #1c5790;
+    min-height: 70px;
+    min-width: 100px;
+    width: 100px;
+}
+.min-height-25px {
+    min-height: 25px;
+}
+
+
+/* FLOATS */
+.f-left {
+    float: left !important;
+}
+.f-right {
+    float: right !important;
+}
+/* FLOATS */
+
+/* Alinhamento dos textos */
+.txtC {
+    text-align: center !important;
+}
+.txtR {
+    text-align: right !important;
+}
+.txtL {
+    text-align: left !important;
+}
+
+
+/* Tamanho de fonts */
+.ftSize20{
+    font-size: 20px !important;
+}
+.ftSize12 {
+    font-size: 12px !important;
+}
+.ftSize14 {
+    font-size: 14px !important;
+}
+.ftSize24 {
+    font-size: 24px !important;
+}
+
+/* Tamanho de fonts */
+
+/* Fonts Weith */
+.bold {
+    font-weight: bold;
+}
+/* Fonts Weith */
+
+/* Colors Default */
+.verdeSuccess {
+    color: #12a500;
+}
+.vermError {
+    color: #d43f3a;
+}
+/* Colors Default */
+
+/*Configuração das Theads das tables  */
+.table-config{
+    margin-bottom: 0px;
+}
+.table-config thead tr{
+    font-size: 14px;
+    font-family: Arial;
+    text-align: center;
+}
+.table-config thead tr th{
+    height: 35px;
+    text-align: center;
+    font-weight: 400;    
+}
+.table-config tbody tr{
+    font-size: 10px;
+    height: 28px;
+}
+.table-config tbody tr td{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    text-align: center;
+    padding-bottom: auto;
+    padding-top: auto;
+    vertical-align: middle;
+}
+.table-config tfoot tr td{
+    padding: 0px !important;
+}
+/* Fim - Configuração das Theads das tables  */
+
+.nav-link img {
+    padding-right: 10px;
+}
+.table-striped tbody tr:nth-of-type(odd){background-color:#cce1f4}
+
+/* Select estilizado */
+select.estilizado {
+    border-radius: 6px;
+    background-color: #1c5790;
+    border: solid 1px #e4e4e4;
+    color: white;
+    font-weight: 700;
+}
+
+/* Select Moeda Estilizado */
+.form-control-sm {
+    border: 1px solid rgba(0, 0, 0, .15);
+    display: block;
+    width: 100%;
+}
+.inputCovert {
+    width: 50%;
+    border-radius: 0 .25rem .25rem 0;
+    line-height: 1.55;
+}
+.inputCovert.invertido {
+    border-radius: .25rem 0 0 .25rem;
+}
+/* Classes de configuração de cores para o dropdown */
+.dropDownEstilizado {
+    min-width: 61px;
+    text-align: center;
+}
+.dropDownEstilizado.azul {
+    background-color: #1c5790;
+}
+.dropDownEstilizado.verde-agua {
+    background-color: #33cc99;
+}
+/* Classes de configuração de cores para o dropdown */
+.selectCovert {
+    border-radius: .25rem 0 0 .25rem !important;
+}
+
+.selectCovert.invertido {
+    border-radius: 0 .25rem .25rem 0 !important;
+}
+/* Select Moeda Estilizado */
+
+/* Input group estilizado */
+.input-group-addon.estilizado {
+    padding: .4rem 1rem;
+    background-color: #1c5790;
+    border: solid 1px #1c5790;
+    color: #ffffff;
+    text-align: center;
+    outline: none;
+}
+
+.input-group-addon.selectConfig.estilizado {
+    padding-right: 0px;
+    padding-left: 2px;
+}
+
+.estilizado img {
+    max-height: 26px;
+    margin: auto;
+    height: 25px;
+}
+/* Input group estilizado */
+
+/* Usario registro */
+@media only screen and (min-width: 1200px) {
+    .container.info {
+        width: 57%;
+    }
+}    
+.container.info {
+    min-width: 40%;
+    border-radius: 6px;
+    background-color: #ffffff;    
+}
+.btn-proximo {
+    color: #fff;
+    background-color: #1c5790;
+    border-color: #1c5790;
+    border-radius: 100px !important;
+}
+.titulo {
+    padding: 20px 0 0 0;
+}
+.titulo h3 {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #1c5790;
+    height: 18px;
+}
+.row.mensagem {
+    height: 100px;
+    background-color: #08d7c4;
+}
+
+/* Usario registro */
+.registro h2 {
+    font-family: Arial;
+    font-size: 20px;
+    text-align: left;
+    color: #1c5790;
+}
+.logo {
+    text-align: center;
+}
+/* Usario registro */
+
+/* Fontes de ícones */
+.icon {
+    font-family: iconfonts;
+}
+.criptomoeda {
+    font-family: criptofonts;
+}
+/* Fontes de ícones */
+
+/* Botoes de On or Off para tela de configurações */
+.configuracao .btn-secondary.active, 
+.configuracao .btn-secondary:active, 
+.configuracao .show>.btn-secondary.dropdown-toggle {
+    background-color: #12a500;
+    background-image: none;
+    border-color: #12a500;
+}
+/* Botoes de On or Off para tela de configurações */
+
+/* Configurações - form saque */
+.formSaque label {
+    font-size: 14px;
+}
+/* Configurações - form saque */
+/* Configuração de altura do form-control */
+.form-control {
+    height: 40px !important;
+}
+/* Configuração de altura do form-control */
+@media (max-width: 320px) {
+
+}
+.voltar {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.voltar a {
+    font-size: 14px !important;
+    font-weight: bold;
+    color: #1c5790 !important;
+}
+.voltar a:hover {
+    cursor: default;
+}
+
+/* Configuração do select button personalizado adaptando tamanho responsivo */
+.btnSelect {
+	width: 60px;
+	height: 40px;
+}
+.inputSelect {
+	width: calc(100% - 60px);
+	height: 40px;
+}
+.btnJuntos .um {
+	border-radius: .25rem 0rem 0rem .25rem !important;
+}
+.btnJuntos .dois {
+	border-radius: 0rem .25rem .25rem 0rem !important;
+}
+
+.table-config.azul thead > tr {
+    color: white;
+    background-color: #1c5790;
+}
+
+/* Alteração no Bootstrap para diminuição dos espaços entre os box */
+@media (min-width: 768px) {
+    .col,.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-auto,.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-auto,.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-auto,.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-auto,.col-xl,.col-xl-1,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-auto {
+        padding-right: 7px;
+        padding-left: 7px
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* Estilos para FAQ e Termos de USO */
+.container.fullPage {
+    background: #FFF;
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+    padding-bottom: 1em !important;
+    border-radius: 6px;
+    cursor: default;
+}
+.container.fullPage p {
+    text-indent: 1em;
+    text-align: justify;
+}
+/* Estilos para FAQ e Termos de USO */
+
+/* Estilo para ajustes do botão no mobile */
+@media (max-width: 480px) {
+    .btn-block-xs-only {
+      display: block;
+      width: 100%;
+    }
+}
+/* Fim - Estilo para ajustes do botão no mobile */
+/* Padronização das tabelas */
+thead > tr > th {
+    border-left: 1px solid rgba(255, 255, 255, .7);
+    border-bottom: 1px solid rgba(255, 255, 255, .7) !important;
+    border-top: 0;
+    border-bottom: 0;
+    padding-bottom: 5px !important;
+    font-size: 12px;
+    padding: 1px !important;
+    background-color: #1c5790; 
+    color: #FFF;
+    font-weight: 400;
+    text-align: center;
+    height: 30px;
+    vertical-align: center;
+}
+tbody > tr > td {
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    padding: 2px;
+    font-size: 12px;
+    padding: 1px !important;
+    vertical-align: middle;
+    border-bottom: 0;
+    border-top: 0;
+    text-align: center;
+}
+tbody > tr > td > i {
+    position: relative;
+    bottom: 2px;
+    font-weight: 700 !important;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px !important;
+    cursor: pointer;
+}
+.dados-tabela .col {
+    padding-bottom: .50rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+/*Fim - Padronização das tabelas */
+
+/* Configurações */
+input.toggle {
+    display: none;
+    visibility: hidden;
+}
+label.toggle {
+    width: 100%;
+    height: 100%;
+}
+#expand {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+/* Fim - Configurações */
+
+/* Personalização do scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+  }
+   
+  ::-webkit-scrollbar-button:start:decrement,
+  ::-webkit-scrollbar-button:end:increment  {
+    display: none;
+  }
+   
+  ::-webkit-scrollbar-track-piece  {
+    background-color: transparent;
+  }
+   
+  ::-webkit-scrollbar-thumb:vertical {
+    background-color: transparent;
+    -webkit-border-radius: 6px;
+  }
+/* Fim - Personalização do scrollbar */
+
+/* Estilos alta e baixa de ticker */
+.percent-up {
+	color: #1fc936 !important;
+}
+.percent-down {
+	color: #cc0000 !important;
+}
+/* Fim - Estilos alta e baixa de ticker */
+
+/* Arrumando o padding do select do cadastro */
+select.form-control:not([size]):not([multiple]) {
+    padding: 0 .5rem;
+}
+/* Fim - Arrumando o padding do select do cadastro */
+
+/* Notificacoes */
+.notiny-theme-dark {
+    background-color: #1d407d;
+    color: #ffffff;
+}
+.simple-notification {
+    border-radius: 15px;
+}
+.simple-notification.info {
+    background: #1d407d !important;
+}
+.simple-notification.alert {
+    background: #6e6e6e !important;
+}
+.simple-notification.info a {
+    color: #ffffff !important;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: underline; 
+}
+.simple-notification .icon {
+    display: none;
+}
+.simple-notification .simple-notification-svg {
+    width: 25px !important;
+    height: 25px !important;
+}
+/* Alteração no estilo dos campos de range de datas dos filtros */
+.dx-texteditor-input {
+    height: 40px;
+    font-size: 1rem;
+  }
+/* Fim - Alteração no estilo dos campos de range de datas dos filtros */
+/* Mobile only */
+@media (min-width: 768px) {
+    hr.mobile-only {
+        display: none;
+    }
+}
+/* Fim - Mobile only */

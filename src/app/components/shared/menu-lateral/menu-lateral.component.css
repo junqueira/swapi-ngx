@@ -1,0 +1,210 @@
+@media (max-width: 767px) {
+    #sidebar {
+        overflow: scroll !important;
+        overflow-x: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+    .nomeCliente {
+        top: 10px;
+        text-align: center;
+    }
+    #sidebar .sidebar-header img {
+        margin-left: calc(50% - 47.5px);
+    }
+}
+
+#sidebar {
+    width: 340px;
+    position: fixed;
+    top: 0;
+    left: -370px;
+    height: 100vh;
+    z-index: 9999;
+    background: #000000;
+    color: #fff;
+    transition: all 0.3s;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #1c5790;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss i {
+    line-height: 35px;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #7386D5;
+}
+
+.overlay {
+    /*display: none;*/
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+    top: 0;
+    left: 0;
+}
+
+#sidebar .sidebar-header {
+    padding: 37px 15px;
+    background: #02080e;
+}
+
+#sidebar .sidebar-header .user-info {
+    position: relative;
+}
+
+#sidebar .sidebar-header .user-info i {
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+#sidebar .sidebar-header img {
+    display: inline-block;
+    width: 95px;
+    height: 95px;
+    border: solid 3px #fff;
+    border-radius: 50%;
+    background: #333;
+    line-height: 95px;
+    text-align: center;
+}
+
+#sidebar .sidebar-header h3 {
+    font-size: 18px;
+}
+
+#sidebar .sidebar-header h5 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul i {
+    color: #fff;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#sidebar ul li p span {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#sidebar ul li a {
+    color: #FFF !important;
+    display: block;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    height: 60px;
+    line-height: 40px;
+    padding: 10px 10px 10px 20px;
+    border-left: solid 15px transparent;
+    font-weight: 100;
+    font-weight: lighter !important;
+}
+
+#sidebar ul li a:hover {
+    color: #FFF !important;
+    background: #32679b;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #000000 !important;
+    background: rgba(242, 242, 242, 0.5);
+    border-left: solid 15px #fff;
+}
+
+#sidebar a[data-toggle="collapse"] {
+    position: relative;
+}
+
+#sidebar a[aria-expanded="false"]::before,
+a[aria-expanded="true"]::before {
+    content: 'v';
+    font-family: iconfonts;
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-size: 0.8em;
+}
+
+#sidebar a[aria-expanded="true"]::before {
+    content: 'u';
+}
+
+#sidebar ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #02080e;
+}
+
+#sidebar-bottom-menu {
+    position: relative;
+}
+
+#sidebar .menu-tooltip {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    font-size: 22px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.nomeCliente {
+    margin: auto;
+}
+
+.icon {
+    position: relative;
+    font-size: 30px;
+    margin-right: 20px;
+    bottom: -5px;
+}
+
+.ftSize25 {
+    font-size: 24px !important;
+}
+
+.imagem-cliente:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

@@ -1,0 +1,51 @@
+.topo-navbar {
+    background-color: #000000;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.topo-navbar .logo-footer img {
+    height: 30px;
+}
+
+.topo-navbar .social img {
+    height: 25px;
+    opacity: 0.8 !important;
+}
+
+.topo-navbar .social img:hover {
+    opacity: 1 !important;
+}
+
+.navbar {
+    background-color: #2265a3;
+    padding: 40px 0;
+}
+
+.navbar p {
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #FFF;
+    font-size: 16px;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 12px;
+    color: #FFF !important;
+    opacity: 0.7;
+}
+
+.navbar a:hover {
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .margLR-20 {
+        margin-right: 50%;
+    }
+    .navbar p {
+        margin-top: 20px;
+    }
+}

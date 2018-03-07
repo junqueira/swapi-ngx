@@ -1,0 +1,20 @@
+<div class="modal fade" id="modalConfirmacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">{{ modalService?.tituloGenerico }}</h5>
+      </div>
+      <div class="modal-body txtC">
+        {{ modalService?.mensagemGenerica }}
+      </div>
+      <div class="modal-footer">
+        <div class="wd-50percent txtL">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+        </div>
+        <div class="wd-50percent txtR">
+          <button type="button" class="btn btn-azul" data-dismiss="modal" (click)="modalService.confirmarAcao()">Sim</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

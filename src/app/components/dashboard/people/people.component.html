@@ -1,0 +1,81 @@
+<!-- <div class="row">
+    <div class="col-xl-12">
+        <extrato-completo [exibePaginacao]="exibePaginacao" [lancamentos$]="lancamentos$" [lancamentosCompleto]="lancamentos" [qtdLancamentosTotal]="qtdLancamentosTotal" [explorer]="explorer" (exportarExcel)="exportarExcelExtrato()"></extrato-completo>
+    </div>
+</div> -->
+
+<!-- <p>{{peopleHeader}}</p> -->
+
+
+<div class="box-no-padding">
+    <div>
+      <div class="tabela-extrato-operacoes padT-10">
+        <h2 class="titulo-tabela padLR-30">{{"BlocoPeople.people" | translate}} </h2>
+        <hr>
+
+        <table class="table table-config table-striped margT-10">
+            <thead>
+                <tr>
+                <th (click)="setOrderBy('name')" class="border-left-0">{{"BlocoPeople.name" | translate}}</th>
+                <th (click)="setOrderBy('name')">{{"BlocoPeople.height" | translate}}</th>
+                <!-- <th (click)="setOrderBy('name')">{{"BlocoPeople.mass" | translate}}</th> -->
+                <th (click)="setOrderBy('name')">{{"BlocoPeople.birth_year" | translate}}</th>
+                <!-- <th (click)="setOrderBy('name')">{{"BlocoPeople.films" | translate}}</th> -->
+                <!-- <th (click)="setOrderBy('name')">{{"BlocoPeople.species" | translate}}</th> -->
+                <!-- <th (click)="setOrderBy('name')">{{"BlocoPeople.vehicles" | translate}}</th> -->
+                <!-- <th (click)="setOrderBy('name')">{{"BlocoPeople.starships" | translate}}</th> -->
+                <th>&nbsp;</th>
+                </tr>
+            </thead>
+
+            <p>{{peopleHeader}}</p>
+         
+            <section *ngIf="peoples != undefined">
+                <tbody>
+                    <tr *ngFor="let people of peoples.results | paginate: { itemsPerPage: qtdPorPagina, currentPage: pagina }">
+                        <!-- <td class="border-left-0">{{ people?.createdAt | date:'dd/MM/yyyy' }}</td> -->
+
+                        <td>{{ people.name }}</td>
+                        <td>{{ people.height }}</td>
+                        <td>{{ people.mass }}</td>
+                        <td>{{ people.birth_year }}</td>
+                        
+                        <!-- <td>{{ people.films }}</td> -->
+                        <!-- <td>{{ people.species }}</td> -->
+                        <!-- <td>{{ people.vehicles }}</td> -->
+                        <!-- <td>{{ people.starships }}</td> -->
+
+                    </tr>
+                </tbody>
+            </section>
+            <tfoot>
+                <tr>
+                <td colspan="6">
+                    <a [routerLink]="['/dashboard','principal']">
+                    <div class="f-left padLR-30 voltar voltarInicio">
+                        <a>{{"BlocoPeople.Voltar" | translate}}</a>
+                    </div>
+                    </a>
+                    <pagination-controls class="f-left margTB-10 paginar"
+                        (pageChange)="pagina = $event"
+                        previousLabel="Anterior"
+                        nextLabel="Próximo"
+                    >
+                    </pagination-controls>
+                    <div class="f-right padLR-30 margTB-10 download" (click)="exportar()">
+                    <i class="material-icons">file_download</i>
+                    </div>
+                </td>
+                </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+</div>
+
+
+<section *ngIf="people != undefined">
+    <ul *ngFor="let p of people.results">
+        <li>{{p.name}}</li>
+    </ul>
+</section>

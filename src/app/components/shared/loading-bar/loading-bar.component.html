@@ -1,0 +1,12 @@
+<div class="bar-pai">
+    <div class="bar-container" *ngIf="globalService.loading && barra == 'indeterminate'">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="progress" *ngIf="globalService.loading && barra == 'determinate'">
+        <div class="determinate" [style.width]=" percent + '%'"></div>
+    </div>
+</div>

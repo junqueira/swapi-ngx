@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "criptofonts";
+  src:url("fonts/criptofonts.eot");
+  src:url("fonts/criptofonts.eot?#iefix") format("embedded-opentype"),
+    url("fonts/criptofonts.woff") format("woff"),
+    url("fonts/criptofonts.ttf") format("truetype"),
+    url("fonts/criptofonts.svg#criptofonts") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "criptofonts" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "criptofonts" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-aeon:before {
+  content: "\61";
+}
+.icon-blk:before {
+  content: "\62";
+}
+.icon-brl:before {
+  content: "\63";
+}
+.icon-btc:before {
+  content: "\64";
+}
+.icon-dash:before {
+  content: "\65";
+}
+.icon-doge:before {
+  content: "\66";
+}
+.icon-emc:before {
+  content: "\67";
+}
+.icon-eth:before {
+  content: "\68";
+}
+.icon-ftc:before {
+  content: "\6a";
+}
+.icon-ltc:before {
+  content: "\6b";
+}
+.icon-msc:before {
+  content: "\69";
+}
+.icon-nmc:before {
+  content: "\6c";
+}
+.icon-nxt:before {
+  content: "\6d";
+}
+.icon-pot:before {
+  content: "\6e";
+}
+.icon-ppc:before {
+  content: "\6f";
+}
+.icon-usd:before {
+  content: "\70";
+}
+.icon-xmr:before {
+  content: "\71";
+}

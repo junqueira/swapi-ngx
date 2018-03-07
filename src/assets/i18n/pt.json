@@ -1,0 +1,37 @@
+{
+    "MenuLateral": {
+        "Dashboard": "Dashboard",
+        "People": "Pessoas",
+        "Planets": "Planetas",
+        "Films": "Filmes",
+        "Species": "Espécie",
+        "Vehicles": "Veiculos",
+        "Starships": "Naves Espaciais",
+        "Configuracao": "Configurações",
+        "Notificacao": "Notificações",
+        "Sair": "Sair",
+        "Idioma": "Idioma",
+        "Portugues": "Português",
+        "Ingles": "English",
+        "MarcarLida": "Marcar como lida",
+        "MarcarNaoLida": "Marcar como não lida",
+        "ExcluirNotificacao": "Excluir notificação"
+    },
+    "BlocoPeople": {
+        "people": "São pessoas",
+        "name": "nome",
+        "height": "altura",
+        "mass": "massa",
+        "hair_color": "hair_color",
+        "skin_color": "skin_color",
+        "eye_color": "eye_color",
+        "birth_year": "birth_year",
+        "gender": "gênero",
+        "homeworld": "homeworld",
+        "films": "filmes",
+        "species": "espécie",
+        "vehicles": "veículos",
+        "starships": "naves espaciais",
+        "Voltar": "Voltar"
+    }
+}

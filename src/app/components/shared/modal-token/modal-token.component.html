@@ -1,0 +1,21 @@
+<div class="modal fade" id="modalToken" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">{{"Seguranca.TokenAutentica" | translate}}</h5>
+        </div>
+        <div class="modal-body txtC">
+          <div class="form-group">
+            <label for="codigo">{{ modalService.mensagemToken }}</label>
+            <input type="text" [(ngModel)]="codigo" class="form-control" name="codigo" maxlength="6" placeholder="{{'Seguranca.DigiteToken' | translate}}" autocomplete="off"/>
+          </div>
+          <div>
+              <button class="btn btn-azul btn-block" data-dismiss="modal" (click)="confirmarSaque()">{{"Seguranca.Confirmar" | translate}}</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-azul" data-dismiss="modal">{{"Seguranca.Cancelar" | translate}}</button>
+        </div>
+      </div>
+    </div>
+  </div>

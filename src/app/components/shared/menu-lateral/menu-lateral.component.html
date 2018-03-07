@@ -1,0 +1,95 @@
+<nav id="sidebar">
+    <div id="dismiss">
+        <i class="material-icons">arrow_back</i>
+    </div>
+
+    <div class="sidebar-header">
+        <div class="row user-info">
+            <div class="col-md-4 col-xs-12 imagem-cliente">
+                <input #avatar type="file" (change)="uploadAvatar($event);" accept="image/x-png,image/jpeg" hidden>
+                <img src="" alt="" (click)="avatar.click()" #avatarImg/>
+            </div>
+            <div class="col-md-8 col-xs-12 nomeCliente">
+                <h3 class="name">{{ clienteLogado.name }}</h3>
+                <h5>The Star Wars {{ clienteLogado.email }}</h5>
+            </div>
+            <i class="glyphicon glyphicon-cog"></i>
+        </div>
+        <div class="row margT-16">
+            <div class="col">
+                <select #language class="input-group-addon selectConfig estilizado margLR-auto" (change)="globalService.switchLanguage(language.value)">
+					<option value="en">{{"MenuLateral.Ingles" | translate}}</option>
+					<option value="pt">{{"MenuLateral.Portugues" | translate}}</option>
+				</select>
+            </div>
+        </div>
+    </div>
+
+    <ul class="list-unstyled components">
+        <li routerLinkActive="active" class="closeMenu voltarInicio">
+            <a [routerLink]="['/dashboard','principal']">
+                <span class="icon">i</span> {{ "MenuLateral.Dashboard" | translate }}</a>
+        </li>
+        <li routerLinkActive="active" class="closeMenu voltarInicio">
+            <a [routerLink]="['/dashboard','People']">
+                <span class="icon">c</span> {{ "MenuLateral.People" | translate }}</a>
+        </li>
+        <li routerLinkActive="active" class="closeMenu voltarInicio">
+            <a [routerLink]="['/dashboard','Planets']">
+                <span class="icon">d</span> {{ "MenuLateral.Planets" | translate }}</a>
+        </li>
+        <li routerLinkActive="active" class="closeMenu voltarInicio">
+            <a [routerLink]="['/dashboard','Films']">
+                <span class="icon">e</span> {{ "MenuLateral.Films" | translate }}</a>
+        </li>
+        <li routerLinkActive="active" class="closeMenu voltarInicio">
+            <a [routerLink]="['/dashboard','Species']">
+                <span class="icon">f</span> {{ "MenuLateral.Species" | translate }}</a>
+        </li>
+        <li routerLinkActive="active" class="closeMenu voltarInicio">
+            <a [routerLink]="['/dashboard','Vehicles']">
+                <span class="icon">g</span> {{ "MenuLateral.Vehicles" | translate }}</a>
+        </li>
+        <li routerLinkActive="active" class="closeMenu voltarInicio">
+            <a [routerLink]="['/dashboard','Starships']">
+                <span class="icon">h</span> {{ "MenuLateral.Starships" | translate }}</a>
+        </li>
+        <li routerLinkActive="active" class="closeMenu voltarInicio">
+            <a [routerLink]="['/dashboard','configuracao']">
+                <span class="icon">i</span> {{ "MenuLateral.Configuracao" | translate }}</a>
+        </li>
+        <li>
+            <a id="showNotifications">
+                <span class="icon">n</span> {{ "MenuLateral.Notificacao" | translate }}
+                <span class="badge badge-light">{{ qtdNotificacoes }}</span>
+            </a>
+            <ul class="list-unstyled" id="notificacoes" style="display: none;" #notificacoes>
+                <!-- <li><p class="padL-50 closeMenu"><span [routerLink]="routerEdit">Clique aqui.</span> É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</p></li> -->
+                <li *ngFor="let msg of mensagensTodas">
+                    <hr>
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-7">
+                            <p>{{ msg?.message }}</p>
+                        </div>
+                        <div class="col-1">
+                            <i *ngIf="msg?.status == 'UNREAD'" data-toggle="tooltip" data-placement="top" title="{{'MenuLateral.MarcarLida' | translate}}" class="material-icons letras-verdes-hover" (click)="acaoNotificao(msg,'READ')">notifications</i>
+                            <i *ngIf="msg?.status == 'READ'" data-toggle="tooltip" data-placement="top" title="{{'MenuLateral.MarcarNaoLida' | translate}}" class="material-icons letras-vermelhas-hover" (click)="acaoNotificao(msg,'UNREAD')">notifications_off</i>
+                        </div>
+                        <div class="col-1">
+                            <i data-toggle="tooltip" data-placement="top" title="{{'MenuLateral.ExcluirNotificacao' | translate}}" class="material-icons letras-vermelhas-hover" (click)="acaoNotificao(msg,'DELETED')">clear</i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="list-unstyled" id="sidebar-bottom-menu">
+        <li class="voltarInicio">
+            <a (click)="logout()">
+                <span class="icon">q</span> {{ "MenuLateral.Sair" | translate }}</a>
+            <i class="menu-tooltip glyphicon glyphicon-question-sign"></i>
+        </li>
+    </ul>
+</nav>

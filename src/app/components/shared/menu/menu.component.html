@@ -1,0 +1,34 @@
+<nav class="main-nav navbar navbar-fixed-top navbar navbar-expand-lg">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" id="sidebar-expand" class="btn navbar-btn">
+        <i class="material-icons">menu</i>
+        <div *ngIf="notificacoes | async as note">
+          <div class="notificacao btn-vermelho txtC" *ngIf="note > 0">
+            <p>{{ notificacoes | async }}</p>
+          </div>
+        </div>
+      </button>
+
+            <a class="navbar-brand" routerLink="/dashboard/principal">
+                <img src="/assets/img/jedi.svg" class="icon" alt="logotipo" />
+                <img src="/assets/img/jedi.svg" class="logo" alt="logotipo" />
+                <h1 class="brand-logo"></h1>
+            </a>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="">
+            <ul class="nav nav-right ml-auto">
+                <li>
+                    <a routerLink="" (click)="logout()" class="icon" title="sair" alt="sair">q</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- <p>
+    fasd asdfasdf irst-page works!
+</p> -->
